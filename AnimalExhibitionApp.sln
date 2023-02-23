@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6DCFD2D6-4C7F-44B1-825E-31C60873C58D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8F29C5F4-22D7-4C53-84AC-C78C82E8C2E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{0C350FCB-DA83-454F-8580-143B169B2BEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Systems", "Systems", "{7333E743-453B-47AA-AF79-5A3B3F8B946A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{4BDB67C4-9075-465E-865F-CBBE7A4399C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{AD679D40-BAF6-4EE6-904F-76E7223A6901}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DE6297DF-6A20-4D60-87B4-3F22BBAAE03C}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BDB67C4-9075-465E-865F-CBBE7A4399C2} = {7333E743-453B-47AA-AF79-5A3B3F8B946A}
+		{AD679D40-BAF6-4EE6-904F-76E7223A6901} = {7333E743-453B-47AA-AF79-5A3B3F8B946A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B53129A-CCF9-43DC-A5B7-5BB75A616B3F}
+	EndGlobalSection
+EndGlobal
