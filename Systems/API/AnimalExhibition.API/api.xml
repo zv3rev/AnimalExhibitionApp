@@ -4,12 +4,22 @@
         <name>AnimalExhibition.API</name>
     </assembly>
     <members>
+        <member name="T:AnimalExhibition.Api.Configuration.LoggerConfiguration">
+            <summary>
+            Logger Configuration
+            </summary>
+        </member>
+        <member name="M:AnimalExhibition.Api.Configuration.LoggerConfiguration.AddAppLogger(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add logger
+            </summary>
+        </member>
         <member name="T:AnimalExhibition.API.Configuration.SwaggerConfiguration">
             <summary>
             Swagger configuration
             </summary>
         </member>
-        <member name="M:AnimalExhibition.API.Configuration.SwaggerConfiguration.AddAppSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:AnimalExhibition.API.Configuration.SwaggerConfiguration.AddAppSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,AnimalExhibition.Services.Settings.MainSettings,AnimalExhibition.Services.Settings.SwaggerSettings)">
             <summary>
             Add OpenAPI for API
             </summary>
@@ -23,14 +33,9 @@
             </summary>
             <param name="app">Web application</param>
         </member>
-        <member name="T:AnimalExhibition.Api.Configuration.LoggerConfiguration">
+        <member name="M:AnimalExhibition.API.Controllers.TestController.Get">
             <summary>
-            Logger Configuration
-            </summary>
-        </member>
-        <member name="M:AnimalExhibition.Api.Configuration.LoggerConfiguration.AddAppLogger(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
-            <summary>
-            Add logger
+            Returns "hello" string
             </summary>
         </member>
         <member name="T:DSRNetSchool.Api.Configuration.CorsConfiguration">

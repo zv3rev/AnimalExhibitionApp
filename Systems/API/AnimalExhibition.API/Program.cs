@@ -1,6 +1,12 @@
+using AnimalExhibition.Api;
 using AnimalExhibition.Api.Configuration;
 using AnimalExhibition.API.Configuration;
+using AnimalExhibition.Services.Settings;
+using AnimalExhibition.Settings;
 using DSRNetSchool.Api.Configuration;
+
+var mainSettings = Settings.Load<MainSettings>("Main");
+var swaggerSettings = Settings.Load<SwaggerSettings>("Swagger");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,9 +24,11 @@ services.AddAppCors();
 
 services.AddAppVersioning();
 
-services.AddAppSwagger();
+services.AddAppSwagger(mainSettings, swaggerSettings);
 
 services.AddAppControllerAndViews();
+
+services.RegisterAppServices();
 
 var app = builder.Build();
 

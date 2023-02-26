@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  animalexibition_postgresql:
+    image: postgres:14.1
+
+  animalexibition_redis:
+    image: redis
+  
+
+  animalexhibition.api:
+    image: ${DOCKER_REGISTRY-}animalexhibitionapi
+    build:
+      context: .
+      dockerfile: Systems/API/AnimalExhibition.API/Dockerfile
+    depends_on:
+      - animalexibition_postgresql
+      - animalexibition_redis
