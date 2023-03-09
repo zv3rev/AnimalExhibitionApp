@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "AnimalExhibition.Settings": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:54215;http://localhost:54219"
+    }
+  }
+}

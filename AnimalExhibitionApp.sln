@@ -29,6 +29,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalExhibition.Services.S
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{60F09F17-B36D-4284-A5AB-25367EDFC6CE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalExhibition.Context", "Data\AnimalExhibition.Context\AnimalExhibition.Context.csproj", "{0FF64D0D-660C-4FC7-9611-B260A1A49308}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalExhibition.ContextEntities", "Data\AnimalExhibition.ContextEntities\AnimalExhibition.ContextEntities.csproj", "{F70B529D-6BE5-4269-AB6F-924ACD85E67F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{2D87283E-A02B-4F17-B3FF-C1804D75F420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalExhibition.Context.MigrationsMSSQL", "Data\Migrations\AnimalExhibition.Context.MigrationsMSSQL\AnimalExhibition.Context.MigrationsMSSQL.csproj", "{E6A66D9C-D7EB-4E43-B101-BFC237E47CB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalExhibition.Context.MigrationsPostgreSQL", "Data\Migrations\AnimalExhibition.Context.MigrationsPostgreSQL\AnimalExhibition.Context.MigrationsPostgreSQL.csproj", "{90203A9B-838F-466A-8BE2-21E0E7EAB372}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +69,22 @@ Global
 		{60F09F17-B36D-4284-A5AB-25367EDFC6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F09F17-B36D-4284-A5AB-25367EDFC6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F09F17-B36D-4284-A5AB-25367EDFC6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF64D0D-660C-4FC7-9611-B260A1A49308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF64D0D-660C-4FC7-9611-B260A1A49308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF64D0D-660C-4FC7-9611-B260A1A49308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF64D0D-660C-4FC7-9611-B260A1A49308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70B529D-6BE5-4269-AB6F-924ACD85E67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70B529D-6BE5-4269-AB6F-924ACD85E67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70B529D-6BE5-4269-AB6F-924ACD85E67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70B529D-6BE5-4269-AB6F-924ACD85E67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A66D9C-D7EB-4E43-B101-BFC237E47CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A66D9C-D7EB-4E43-B101-BFC237E47CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A66D9C-D7EB-4E43-B101-BFC237E47CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A66D9C-D7EB-4E43-B101-BFC237E47CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90203A9B-838F-466A-8BE2-21E0E7EAB372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90203A9B-838F-466A-8BE2-21E0E7EAB372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90203A9B-838F-466A-8BE2-21E0E7EAB372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90203A9B-838F-466A-8BE2-21E0E7EAB372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +97,11 @@ Global
 		{55AD9E3C-0A33-4A38-A4FE-20E385340ECA} = {0C350FCB-DA83-454F-8580-143B169B2BEF}
 		{18D34115-2EF8-46D8-9778-6DEAEE3FC496} = {0C350FCB-DA83-454F-8580-143B169B2BEF}
 		{8F14BAA3-17AA-4B4D-95C5-8A60FD9BB381} = {8F29C5F4-22D7-4C53-84AC-C78C82E8C2E3}
+		{0FF64D0D-660C-4FC7-9611-B260A1A49308} = {6DCFD2D6-4C7F-44B1-825E-31C60873C58D}
+		{F70B529D-6BE5-4269-AB6F-924ACD85E67F} = {6DCFD2D6-4C7F-44B1-825E-31C60873C58D}
+		{2D87283E-A02B-4F17-B3FF-C1804D75F420} = {6DCFD2D6-4C7F-44B1-825E-31C60873C58D}
+		{E6A66D9C-D7EB-4E43-B101-BFC237E47CB9} = {2D87283E-A02B-4F17-B3FF-C1804D75F420}
+		{90203A9B-838F-466A-8BE2-21E0E7EAB372} = {2D87283E-A02B-4F17-B3FF-C1804D75F420}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B53129A-CCF9-43DC-A5B7-5BB75A616B3F}
